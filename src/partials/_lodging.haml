@@ -1,8 +1,12 @@
 #lodging.block
   %h2 Lodging
-  %p There are plenty of lovely places to stay in McGregor.  You can either browse through some B&B’s yourself, or you can book through the McGregor information centre.  
-  
-  = link_to "Browse B&B's"
-  = link_to "Book via McGregor Info Centre"
+  %p.slim There are plenty of lovely places to stay in McGregor.  You can either browse through some B&B’s yourself, or you can book through the McGregor information centre.  
+  %iframe{:frameborder => "0", :height => "350", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=McGregor,+Western+Cape,+South+Africa&aq=4&oq=McGregor&sll=41.986371,21.454968&sspn=0.015774,0.033023&t=h&ie=UTF8&hq=&hnear=McGregor,+Brede+River+DC,+Western+Cape,+South+Africa&ll=-33.950053,19.833412&spn=0.049839,0.154495&z=13&iwloc=A&output=embed", :width => "900"}
+  %br
+  %small
+    %a{:href => "http://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=McGregor,+Western+Cape,+South+Africa&aq=4&oq=McGregor&sll=41.986371,21.454968&sspn=0.015774,0.033023&t=h&ie=UTF8&hq=&hnear=McGregor,+Brede+River+DC,+Western+Cape,+South+Africa&ll=-33.950053,19.833412&spn=0.049839,0.154495&z=13&iwloc=A", :style => "color:#0000FF;text-align:left"} View Larger Map
+  %br
+  = link_to "Browse B&B's", :class => "book"
+  = link_to "Book via McGregor Info Centre", :class => "book"
   
   %p.info Shuttles will be provided from your B&B in McGregor to the venue (and back again).
