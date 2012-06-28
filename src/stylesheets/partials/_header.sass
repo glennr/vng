@@ -1,0 +1,21 @@
+#header
+  background: #000
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 100
+  +box-shadow(rgba(0, 0, 0, 0.5) 0 0 3px)
+  ul
+    text-align: center
+  li
+    display: inline-block
+  a
+    color: #64b4ff
+    display: block
+    font-size: 15px
+    padding: 20px 25% 18px
+    text-decoration: none
+    +transition(all .4s)
+    &:hover, &:focus
+      background: rgba(255, 255, 255, 0.08)
+      color: #fff
