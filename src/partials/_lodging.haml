@@ -1,12 +1,10 @@
 #lodging.block
   %h2 Lodging
-  %p.slim There are plenty of lovely places to stay in McGregor.  You can either browse through some B&B’s yourself, or you can book through the McGregor information centre.  
-  %iframe{:frameborder => "0", :height => "350", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=McGregor,+Western+Cape,+South+Africa&aq=4&oq=McGregor&sll=41.986371,21.454968&sspn=0.015774,0.033023&t=h&ie=UTF8&hq=&hnear=McGregor,+Brede+River+DC,+Western+Cape,+South+Africa&ll=-33.950053,19.833412&spn=0.049839,0.154495&z=13&iwloc=A&output=embed", :width => "900"}
+  %p.slim There are plenty of lovely places to stay in McGregor. Shuttles will be provided from McGregor to the venue (and back again).
+  %iframe{:frameborder => "0", :height => "350", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "http://maps.google.co.za/maps/ms?msid=216963773501356449339.0004c3eb1a20191ef5a5f&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=-33.931539,19.85487&amp;spn=0.04985,0.154495&amp;z=13&amp;output=embed", :width => "900"}
   %br
   %small
-    %a{:href => "http://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=McGregor,+Western+Cape,+South+Africa&aq=4&oq=McGregor&sll=41.986371,21.454968&sspn=0.015774,0.033023&t=h&ie=UTF8&hq=&hnear=McGregor,+Brede+River+DC,+Western+Cape,+South+Africa&ll=-33.950053,19.833412&spn=0.049839,0.154495&z=13&iwloc=A", :style => "color:#0000FF;text-align:left"} View Larger Map
+    %a{:href => "https://maps.google.co.za/maps/ms?msid=216963773501356449339.0004c3eb1a20191ef5a5f&msa=0", :style => "color:#0000FF;text-align:left", :target => '_blank'} View Larger Map
   %br
-  = link_to "Browse B&B's", :class => "book"
-  = link_to "Book via McGregor Info Centre", :class => "book"
-  
-  %p.info Shuttles will be provided from your B&B in McGregor to the venue (and back again).
+  = link_to "Browse B&B's", 'http://tourismmcgregor.co.za/pages/where-to-stay.php', :class => "book"
+  = link_to "Book via McGregor Info Centre", 'http://www.tourismmcgregor.co.za/pages/online-enquiry-form.php', :class => "book"
