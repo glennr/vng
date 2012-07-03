@@ -13,3 +13,7 @@ You need to be in the root folder
 Some HTML hrefs need to be manually edited in the SITE folder before deployment (CSS & images paths)
 
     staticmatic build .
+
+== Deployment
+
+  git remote add production git@heroku.com:vng.git
