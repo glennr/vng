@@ -1,6 +1,6 @@
 #itinerary.block
   %h2 Itinerary
-  %p.slim Our wedding is on a long weekend, so we’d love you to come and spend the whole weekend with us. When RSVP-ing, you will be asked to select one of the following options.
+  %p.slim Our wedding is on a long weekend, so we’d love you to come and spend the whole weekend with us. When RSVP-ing, you will be asked to select one of the following options:
 
   %table
     %thead
@@ -23,7 +23,10 @@
 
       %tr
         %td.time 1400
-        %td River Cruise & Wine Tasting at Viljoensdrift *
+        %td
+          River Cruise & Wine Tasting at
+          = link_to "Viljoensdrift", "http://www.viljoensdrift.co.za/riverside-experiences.html", :target => '_blank'
+          *
         %td= img "../images/check.png"
         %td{:colspan=>"2"}
 
@@ -53,9 +56,9 @@
 
       %tr.calendar
         %td{:colspan => "2"}
-        %td= link_to img("../images/calendar.png"), "../ics/1.ics"
-        %td= link_to img("../images/calendar.png"), "../ics/2.ics"
-        %td= link_to img("../images/calendar.png"), "../ics/3.ics"
+        %td= link_to img("../images/calendar.png"), "../ics/1.ics", :title => "Add option 1 your calendar"
+        %td= link_to img("../images/calendar.png"), "../ics/2.ics", :title => "Add option 2 your calendar"
+        %td= link_to img("../images/calendar.png"), "../ics/3.ics", :title => "Add our wedding your calendar"
 
       %tr.smallprint
         %td{:colspan => "2"}
