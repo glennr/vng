@@ -13,8 +13,8 @@ h2
   
 .date
   color: #555
-  font: 35px 'Cagliostro'
-  margin-bottom: 40px
+  font: 32px 'Cagliostro'
+  margin-bottom: 30px
   
 #vng
   padding: 150px 30px 0
@@ -26,6 +26,7 @@ h2
   
 .block
   padding: 100px 0 0
+  +pie-clearfix
   
 p.slim
   padding: 0 25% 30px
@@ -69,6 +70,19 @@ a.book
           background: rgba(255, 255, 255, 0.5)
           font-weight: bold
           font-size: 18px
+    .calendar
+      td
+        padding-bottom: 0
+      a
+        display: inline-block
+        height: 34px
+        width: 34px
+        +transition(all .4s)
+        &:hover, &:focus
+          background: #fff
+          +border-radius(50%)
+        img
+          padding: 5px
         
 #menu
   text-align: left
@@ -81,8 +95,14 @@ a.book
   img
     float: left
     padding: 0 20px 90px 0
-  
-#reception
+    
+#venue
+  .half
+    padding: 20px 2.5%
+    text-align: left
+    width: 45%
+    
+#registry
   h3, p
     padding-bottom: 20px
   h3
