@@ -82,7 +82,6 @@ a.book
     float: left
     padding: 0 20px 90px 0
   
-    
 #reception
   h3, p
     padding-bottom: 20px
@@ -90,3 +89,31 @@ a.book
     font-size: 36px
   &.block
     padding-top: 30px
+    
+#countdown_dashboard
+  margin: 0 auto
+  width: 70%
+  +pie-clearfix
+  .dash
+    background: rgba(255, 255, 255, 0.3)
+    color: $one
+    display: inline
+    float: left
+    margin: 0 1%
+    padding: 0 4%
+    width: 10%
+    +border-radius(2px)
+    +box-shadow(rgba(0, 0, 0, 0.03) 0 0 3px)
+    span
+      color: #444
+      display: block
+      padding: 15px 0 0
+  .digit
+    float: left
+    font: 80px/70px "Yanone Kaffeesatz", sans-serif
+    height: 70px
+    padding-bottom: 20px
+    text-align: center
+    width: 50%
+    *
+      color: $two
