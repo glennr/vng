@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 32, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_base.sass */
 h1 {
-  font: 120px "Amaranth", "Chau Philomene One", "Squada One", "PT Serif Caption", "Lobster";
+  font: 115px "Amaranth", "Chau Philomene One", "Squada One", "PT Serif Caption", "Lobster";
 }
 
 /* line 35, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_base.sass */
@@ -296,8 +296,8 @@ h2 {
 /* line 14, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 .date {
   color: #555555;
-  font: 35px "Cagliostro";
-  margin-bottom: 40px;
+  font: 32px "Cagliostro";
+  margin-bottom: 30px;
 }
 
 /* line 19, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
@@ -321,14 +321,21 @@ h2 {
 /* line 27, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 .block {
   padding: 100px 0 0;
+  *zoom: 1;
+}
+/* line 38, /Users/glennr/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.block:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* line 30, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+/* line 31, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 p.slim {
   padding: 0 25% 30px;
 }
 
-/* line 33, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+/* line 34, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 a.book {
   background: rgba(255, 255, 255, 0.3);
   border: 1px solid rgba(0, 0, 0, 0.02);
@@ -340,54 +347,83 @@ a.book {
   width: 30%;
 }
 
-/* line 44, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+/* line 45, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 #itinerary table {
   border-collapse: collpse;
   width: 100%;
 }
-/* line 47, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+/* line 48, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 #itinerary table th, #itinerary table td {
   background: rgba(255, 255, 255, 0.3);
   border-top: 2px solid rgba(0, 0, 0, 0.02);
   padding: 10px 25px;
   white-space: nowrap;
 }
-/* line 52, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+/* line 53, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 #itinerary table th span, #itinerary table td span {
   display: block;
 }
-/* line 54, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+/* line 55, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 #itinerary table th p, #itinerary table td p {
   color: rgba(0, 0, 0, 0.6);
   font-size: 13px;
   padding: 5px 0;
 }
-/* line 58, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+/* line 59, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 #itinerary table th.time, #itinerary table td.time {
   text-align: right;
 }
-/* line 60, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+/* line 61, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 #itinerary table th {
   color: rgba(0, 0, 0, 0.8);
   font-size: 14px;
   font-weight: bold;
 }
-/* line 64, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+/* line 65, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 #itinerary table th span {
   font-size: 13px;
 }
-/* line 68, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+/* line 69, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 #itinerary table tr.day td {
   background: rgba(255, 255, 255, 0.5);
   font-weight: bold;
   font-size: 18px;
 }
 
-/* line 73, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+/* line 74, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+.calendar td {
+  padding-bottom: 0;
+}
+/* line 76, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+.calendar a {
+  display: inline-block;
+  height: 34px;
+  width: 34px;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/* line 81, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+.calendar a:hover, .calendar a:focus {
+  background: white;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 84, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+.calendar a img {
+  padding: 5px;
+}
+
+/* line 87, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 #menu {
   text-align: left;
 }
-/* line 75, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+/* line 89, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 #menu li {
   *zoom: 1;
 }
@@ -397,31 +433,91 @@ a.book {
   display: table;
   clear: both;
 }
-/* line 77, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+/* line 91, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 #menu h2 {
   text-align: center;
 }
-/* line 79, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+/* line 93, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 #menu h3 {
   margin-bottom: 25px;
 }
-/* line 81, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+/* line 95, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
 #menu img {
   float: left;
   padding: 0 20px 90px 0;
 }
 
-/* line 87, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
-#reception h3, #reception p {
+/* line 100, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+#venue .half {
+  padding: 20px 2.5%;
+  text-align: left;
+  width: 45%;
+}
+
+/* line 106, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+#registry h3, #registry p {
   padding-bottom: 20px;
 }
-/* line 89, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
-#reception h3 {
+/* line 108, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+#registry h3 {
   font-size: 36px;
 }
-/* line 91, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
-#reception.block {
+/* line 110, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+#registry.block {
   padding-top: 30px;
+}
+
+/* line 113, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+#countdown_dashboard {
+  margin: 0 auto;
+  width: 70%;
+  *zoom: 1;
+}
+/* line 38, /Users/glennr/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#countdown_dashboard:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 117, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+#countdown_dashboard .dash {
+  background: rgba(255, 255, 255, 0.3);
+  color: #06121d;
+  display: inline;
+  float: left;
+  margin: 0 1%;
+  padding: 0 4%;
+  width: 10%;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.03) 0 0 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.03) 0 0 3px;
+  -o-box-shadow: rgba(0, 0, 0, 0.03) 0 0 3px;
+  box-shadow: rgba(0, 0, 0, 0.03) 0 0 3px;
+  text-shadow: white 0 1px 1px;
+}
+/* line 128, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+#countdown_dashboard .dash span {
+  color: #444444;
+  display: block;
+  padding: 15px 0 0;
+}
+/* line 132, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+#countdown_dashboard .digit {
+  float: left;
+  font: 80px/70px "Yanone Kaffeesatz", sans-serif;
+  height: 70px;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 50%;
+}
+/* line 139, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_content.sass */
+#countdown_dashboard .digit * {
+  color: #ed9322;
 }
 
 /* line 1, /Users/glennr/Current_Projects/code/wedding/src/stylesheets/partials/_footer.sass */
